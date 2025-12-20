@@ -75,7 +75,7 @@ These metrics help assess prediction accuracy and goodness of fit.
 
 Clone the repository:
 
-git clone https://github.com/your-username/gemstone-price-prediction.git
+git clone https://github.com/AarthySwetha/Diamond-price-Prediction/blob/main/Diamond_price_prediction.ipynb
 
 
 Navigate to the project folder:
@@ -112,4 +112,4 @@ Model deployment using Flask or FastAPI
 👩‍💻 Author
 
 Aarthy Swetha M
-AI / ML Engineering Student
+
