@@ -1,115 +1,92 @@
-💎 Gemstone Price Prediction using Linear Regression
-📌 Project Overview
+Gemstone Price Prediction using Linear Regression
+Project Overview
 
-This project performs Exploratory Data Analysis (EDA) and price prediction on a gemstone dataset using Linear Regression. The objective is to understand feature relationships affecting gemstone prices and build a regression model to predict prices based on both numerical and categorical attributes.
+This project performs exploratory data analysis and gemstone price prediction using a linear regression model. The objective is to analyze the relationship between gemstone features and price and build a regression model using manual preprocessing techniques without pipelines.
 
-The workflow is implemented without using pipelines, focusing on manual preprocessing steps for learning clarity.
-
-📂 Dataset
+Dataset
 
 File: gemstone.csv
 
 Target Variable: price
 
-Features:
+Features include numerical attributes such as carat, depth, table, and dimensions, and categorical attributes such as cut, color, and clarity.
 
-Numerical attributes (e.g., carat, depth, table, dimensions)
-
-Categorical attributes (e.g., cut, color, clarity)
-
-⚙️ Technologies & Libraries Used
+Tools and Libraries Used
 
 Python
 
-Pandas – data handling
+Pandas
 
-NumPy – numerical computation
+NumPy
 
-Matplotlib & Seaborn – visualization
+Matplotlib
 
-Scikit-learn – model building and evaluation
+Seaborn
 
-🔍 Exploratory Data Analysis (EDA)
+Scikit-learn
 
-The following EDA steps are performed:
+Exploratory Data Analysis
 
-Display dataset structure using head(), info(), and describe()
+Examined dataset structure using head, info, and describe
 
-Check for missing values
+Checked for missing values
 
-Correlation heatmap for numerical features
+Plotted correlation heatmap for numerical features
 
-Price distribution visualization using histograms
+Visualized price distribution using a histogram
 
-🧠 Data Preprocessing
+Data Preprocessing
 
-Target (price) separated from features
+Separated target variable from features
 
-Categorical features identified and One-Hot Encoded
+Identified categorical and numerical columns
 
-Numerical features retained as-is
+Applied one-hot encoding to categorical features
 
-Encoded categorical and numerical features combined manually using NumPy
+Combined numerical and encoded categorical features manually
 
-Train-test split performed (80% training, 20% testing)
+Split data into training and testing sets with an 80:20 ratio
 
-📈 Model Building
+Model Development
 
-Algorithm: Linear Regression
+A linear regression model was trained using the processed training dataset and used to generate predictions on the test dataset.
 
-Model trained on processed training data
+Model Evaluation
 
-Predictions generated on test data
+The model performance was evaluated using:
 
-📊 Model Evaluation
+Root Mean Squared Error (RMSE)
 
-The model is evaluated using:
+R-squared (R²) score
 
-RMSE (Root Mean Squared Error)
+How to Run
 
-R² Score
+Clone the repository
 
-These metrics help assess prediction accuracy and goodness of fit.
+Ensure gemstone.csv is present in the project directory
 
-▶️ How to Run the Project
+Run the notebook or Python script using Python or Google Colab
 
-Clone the repository:
+Learning Outcomes
 
-git clone https://github.com/AarthySwetha/Diamond-price-Prediction/blob/main/Diamond_price_prediction.ipynb
+Practical experience with exploratory data analysis
 
+Manual preprocessing of numerical and categorical data
 
-Navigate to the project folder:
+Implementation of linear regression for price prediction
 
-cd gemstone-price-prediction
+Evaluation of regression models using standard metrics
 
-
-Ensure gemstone.csv is present in the same directory
-
-Run the notebook or script in Python / Google Colab
-
-📌 Key Learnings
-
-Manual feature encoding without pipelines
-
-Practical EDA for regression problems
-
-Handling mixed numerical and categorical data
-
-Linear regression evaluation techniques
-
-🚀 Future Enhancements
+Future Improvements
 
 Feature scaling and normalization
 
-Try advanced regression models (Ridge, Lasso, Random Forest)
+Experiment with advanced regression models
 
-Hyperparameter tuning
+Cross-validation and hyperparameter tuning
 
-Cross-validation
+Model deployment as a web application
 
-Model deployment using Flask or FastAPI
-
-👩‍💻 Author
+Author
 
 Aarthy Swetha M
-
